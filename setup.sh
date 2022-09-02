@@ -40,7 +40,7 @@ if [[ $install_fonts == "yes" ]]; then
 fi
 
 # Install oh-my-bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+git clone https://github.com/ohmybash/oh-my-bash.git ${home_dir}/.oh-my-bash
 
 # Create backup of current dotfiles, then create symlinks for new ones
 mkdir -p $old_dotfiles_dir
